@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .button {
+            background-color: #e91e63;
+            color: #fff; 
+            padding: 12px 25px;
+            text-align: center; 
+            text-decoration: none; 
+            display: inline-block; 
+            cursor: pointer;
+            border: none;
+            border-radius: 25px;
+            font-size: 1em; 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .navbar {
+            background-color: #f0f0f0;
+            padding: 15px;
+            text-align: right;
+            border: 1px solid #ddd; /* Borde para la barra de navegación */
+        }
+        .navbar a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        .img1 { 
+            width: 700px; 
+            align-content: center; 
+        }
+        .img2, .img3, .img4, .img5 {
+            width: 100%; /* Asegurar que las imágenes no se salgan */
+            margin: 1px;
+        }
+        .border-container {
+            margin: auto;
+            width: 1200px; /* Ancho del div como en el primer código */
+            border: 1px solid #ddd; /* Borde alrededor del contenido */
+            padding: 20px; /* Espacio interno */
+            background-color: #e0e0e0; /* Color de fondo */
+            display: flex; /* Habilitar Flexbox */
+            flex-direction: column; /* Dirección de las secciones en columna */
+            min-height: 100vh; /* Para empujar el footer al final */
+        }
+        .section {
+            margin-bottom: 20px; /* Espacio entre secciones */
+            display: flex; /* Habilitar Flexbox */
+            justify-content: space-between; /* Distribuir espacio entre columnas */
+            border: 1px solid #ddd; /* Borde alrededor de cada sección */
+            padding: 10px; /* Espacio interno para las secciones */
+            background-color: #ffffff; /* Color de fondo para las secciones */
+        }
+        .column {
+            flex: 1; /* Hacer que ambas columnas tomen el mismo espacio */
+            margin: 10px; /* Margen entre columnas */
+            border: 1px solid #ddd; /* Borde alrededor de cada columna */
+            padding: 10px; /* Espacio interno para las columnas */
+            background-color: #f9f9f9; /* Color de fondo para las columnas */
+            box-sizing: border-box; /* Incluir padding en el ancho total */
+            align-content: center;
+        }
+        .column-1 {
+            flex: 1; /* Hacer que ambas columnas tomen el mismo espacio */
+            margin: 10px; /* Margen entre columnas */
+            border: 1px solid #ddd; /* Borde alrededor de cada columna */
+            padding: 10px; /* Espacio interno para las columnas */
+            background-color: #f9f9f9; /* Color de fondo para las columnas */
+            box-sizing: border-box; /* Incluir padding en el ancho total */
+        }
+        .mini-segment {
+            margin: 5px 0; /* Margen para mini segmentos */
+            padding: 10px; /* Espacio interno para mini segmentos */
+            border: 1px solid #ddd; /* Borde alrededor de cada mini segmento */
+            background-color: #ffffff; /* Fondo blanco para mini segmentos */
+            display: flex; /* Habilitar Flexbox para imágenes y descripciones */
+            align-items: center; /* Alinear imagen y texto verticalmente */
+        }
+        .mini-segment img {
+            width: 50%; /* Ancho de la imagen dentro del mini segmento */
+            margin-right: 10px; /* Espacio entre imagen y texto */
+        }
+        .footer {
+            margin-top: auto; /* Empujar el footer hacia abajo */
+            text-align: center; /* Centrar texto */
+            padding: 20px; /* Espacio interno del footer */
+            background-color: #f0f0f0; /* Color de fondo del footer */
+            border-top: 1px solid #ddd; /* Borde superior para el footer */
+        }
+    </style>
+</head>
+<body>
+    <div class="border-container">
+        <div class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Oferta de trabajo</a>
+            <a href="#">Nuestra historia</a>
+        </div>
+
+        <!-- Sección 1: Imagen inicial que abarca todo el ancho -->
+        <div class="section" style="flex-direction: column;">
+            <div class="column" style="display: flex; justify-content: center;">
+                <img src="https://i.pinimg.com/564x/53/ff/8f/53ff8f40f21443acc3c27ac9df5c1a00.jpg" alt="Imagen inicial" class="img1">
+            </div>
+        </div>
+
+        <!-- Sección 2: Descripción -->
+        <div class="section">
+            <div class="column">
+                
+            </div>
+            <div class="column">
+                
+                <div>
+                    somos una empresa que procura tener una sana convivencia dentro de nuestros entornos, dando una buena comunicación y trato a los demás ¡todos somos una familia!
+                </div>
+                
+                <p style="text-align: center"></p>
+            </div>
+        </div>
+
+        <!-- Sección 3: ¿Qué hacemos? -->
+        <div class="section">
+            <div class="column">
+                <h1>Lo que más nos gusta hacer</h1>
+            </div>
+            <div class="column">
+                <div style="position:relative; top:px">
+                    En nuestra empresa de café, cada día es una nueva oportunidad para ofrecer la mejor calidad a nuestros clientes. Desde el amanecer hasta el anochecer, nuestro equipo trabaja con dedicación y pasión para asegurarse de que cada grano de café que enviamos a las tiendas esté en su mejor forma.
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección 4: Conocer a algunas de nuestras personas -->
+        <div class="section">
+            <div class="column-1">
+                <h1>Conócenos!</h1>    
+            </div>
+            <div class="column">
+                <div class="mini-segment">
+                    <img src="https://i.pinimg.com/564x/2e/cc/1d/2ecc1d3c713056e4e3ad9f482500d067.jpg" alt="Persona 1">
+                    <p style="font-size:110%">Jefe de la empresa: Alvaro Quiñeda Ramirez</p>
+                </div>
+                <div class="mini-segment">
+                    <img src="https://i.pinimg.com/564x/bc/7f/09/bc7f0947c45b4a2fb9b8b653fb925e23.jpg" alt="Persona 2">
+                    <p style="font-size:110%">Gerente regional: Jonathan Daniel Valencia Graciano</p>
+                </div>
+                <div class="mini-segment">
+                    <img src="https://i.pinimg.com/564x/c0/98/45/c098454a84c7393aa2ee3d6087004bf0.jpg" alt="Persona 3">
+                    <p style="font-size:110%">Distribuidor: Alan Emiliano Gutierres Heredia</p>
+                </div>
+                <div class="mini-segment">
+                    <img src="https://i.pinimg.com/564x/b8/c8/f6/b8c8f629fca19237869e7c0e49e1c978.jpg" alt="Persona 4">
+                    <p style="font-size:110%">Jefa de ventas: Monica Galinba Graciano Becerra</p>
+                </div>
+                <div class="mini-segment">
+                    <img src="https://i.pinimg.com/564x/15/3b/9e/153b9e7a5cddf2e8177d72e941aae027.jpg" alt="Persona 4">
+                    <p style="font-size:110%">Mascota de la marca: José cafesin</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección 5: Preguntas -->
+        <div class="section">
+            <div class="column">
+                
+                <h1>Preguntas frecuentes</h1>
+            </div>
+            <div class="column">
+                <div style="width:100%">
+                    <h3> ¿Cuál es el origen de sus cafés?</h3>
+                    <p>Nuestros cafés provienen de diversas regiones del mundo, incluyendo América Latina, África y Asia. Trabajamos directamente con agricultores que practican la agricultura sostenible y buscan calidad en cada grano. Cada origen tiene características únicas que se reflejan en el sabor y aroma de nuestros cafés.</p>
+                    <h3> ¿Cómo se debe almacenar el café para mantener su frescura?</h3>
+                    <p>Para mantener la frescura de nuestro café, recomendamos almacenarlo en un lugar fresco y oscuro, en un recipiente hermético. Evita la exposición a la luz, el calor y la humedad, ya que pueden afectar su sabor. Una vez abierto, es mejor consumir el café en un plazo de 2 a 4 semanas.</p>
+                    <h3>¿Qué métodos de preparación recomiendan para sus cafés?</h3>
+                    <p>Recomendamos varios métodos de preparación, como la prensa francesa, la máquina de espresso y el método de goteo. Cada método resalta diferentes notas de sabor en el café. Te animamos a experimentar y encontrar el que más te guste.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>MY COMPANY © 2024</p>
+            <p>Links de contacto | Social Media | Términos y Condiciones</p>
+        </div>
+    </div>
+</body>
+</html>
